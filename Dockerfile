@@ -20,4 +20,4 @@ EXPOSE 8000
 #RUN python manage.py makemigrations
 
 # Run Django server on 0.0.0.0
-CMD ["python", "runserver", "0.0.0.0:8000"]
+CMD python /app/backend/manage.py runserver 0.0.0.0:8000
